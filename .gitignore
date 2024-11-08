@@ -1,3 +1,11 @@
+# Self-Defined
+.gitignore
+.vscode
+a.out
+main
+test
+*.c.swp
+
 # Prerequisites
 *.d
 
