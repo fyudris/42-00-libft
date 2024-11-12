@@ -6,13 +6,13 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:36:22 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/08 18:42:21 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/12 19:16:00 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-size_t	strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
@@ -20,5 +20,4 @@ size_t	strlen(const char *s)
 	while (s[len])
 		len++;
 	return (len);
-
 }

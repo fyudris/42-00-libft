@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:29:39 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/08 18:32:22 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/12 20:22:47 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
