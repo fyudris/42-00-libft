@@ -6,11 +6,11 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:32:24 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/08 18:34:12 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/14 17:51:54 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

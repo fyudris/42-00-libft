@@ -6,11 +6,11 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:34:56 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/12 20:25:18 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/14 17:52:22 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 || c <= 126);
 }

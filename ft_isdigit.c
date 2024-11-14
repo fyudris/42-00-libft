@@ -6,11 +6,11 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:24:20 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/08 18:28:56 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/14 17:52:11 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

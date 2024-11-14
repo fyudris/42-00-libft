@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:29:28 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/12 20:42:36 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/14 14:31:28 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 /*
 #include <stdio.h>
 
-int main() {
+int	main(void) {
     char dest[15] = "Hello";
     char src[] = " World!";
     size_t len = ft_strlcat(dest, src, sizeof(dest));
@@ -47,6 +47,6 @@ int main() {
     printf("Concatenated string: %s\n", dest);
     printf("Total length tried to create: %zu\n", len);
 
-    return 0;
+    return (0);
 }
 */
