@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-size_t	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
@@ -33,10 +33,12 @@ int main() {
     const char *str2 = "Helium";
 
     int result = ft_strncmp(str1, str2, 3);
-    printf("Comparison result for first 3 characters: %d\n", result); // Expected: 0
+    printf("Comparison result for first 3 characters: %d\n", 
+		result); // Expected: 0
 
     result = ft_strncmp(str1, str2, 5);
-    printf("Comparison result for first 5 characters: %d\n", result); // Expected: non-zero
+    printf("Comparison result for first 5 characters: %d\n", 
+		result); // Expected: non-zero
 
     return 0;
 }

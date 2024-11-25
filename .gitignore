@@ -5,6 +5,8 @@ a.out
 main
 test
 *.c.swp
+libft.a
+libftTester-master/
 
 # Prerequisites
 *.d
