@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 15:18:52 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/27 17:41:58 by fyudris          ###   ########.fr       */
+/*   Created: 2024/11/27 23:18:07 by fyudris           #+#    #+#             */
+/*   Updated: 2024/11/27 23:20:24 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int	i;
-	char			cc;
+	char	digit;
 
-	cc = (char) c;
-	i = 0;
-	while (s[i])
+	if (n == -2147483648)
 	{
-		if (s[i] == cc)
-			return ((char *) &s[i]);
-		i++;
+		write(fd, "-2147483648", 11);
+		return ;
 	}
-	if (s[i] == cc)
-		return ((char *) &s[i]);
-	return (NULL);
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+	}
+	if (n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	digit = n % 10 + '0';
+	ft_putchar_fd(digit, fd);
 }

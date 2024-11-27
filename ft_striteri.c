@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 15:18:52 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/27 17:41:58 by fyudris          ###   ########.fr       */
+/*   Created: 2024/11/27 22:54:08 by fyudris           #+#    #+#             */
+/*   Updated: 2024/11/27 22:58:59 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+* Applies the function ’f’ on each character of the string passed as argument, 
+* passing its index as first argument. Each character is passed by address 
+* to ’f’ to be modified if necessary.
+*/
 
-char	*ft_strchr(const char *s, int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
-	char			cc;
 
-	cc = (char) c;
+	if (!s || !f)
+		return ;
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == cc)
-			return ((char *) &s[i]);
+		f(i, &s[i]);
 		i++;
 	}
-	if (s[i] == cc)
-		return ((char *) &s[i]);
-	return (NULL);
 }

@@ -6,13 +6,13 @@
 /*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 17:12:28 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/26 17:19:26 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/11/27 18:19:15 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ftmemcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*temp_dest;
 	unsigned char	*temp_src;
