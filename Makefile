@@ -10,9 +10,12 @@ SRCS =	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
 		ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c\
 		ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c\
 		ft_putendl_fd.c ft_putnbr_fd.c
-# BONUS_SRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c
+
+BONUS_SRCS =	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\ 
+				ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+
 OBJS = $(SRCS:.c=.o)
-# BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 # Rules
 all: $(NAME)
@@ -22,8 +25,8 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 # Rule for bonus part
-#bonus: $(OBJS) $(BONUS_OBJS)
-#	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 # Compile each .c file into .o object files
 %.o: %.c
@@ -31,8 +34,7 @@ $(NAME): $(OBJS)
 
 # Clean up object files
 clean:
-	rm -f $(OBJS)
-#	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 # Clean up everything, including the library and test executable
 fclean: clean
@@ -40,16 +42,5 @@ fclean: clean
 
 # Recompile everything from scratch
 re: fclean all
-
-# Compile and run tests
-# test: $(NAME) $(TEST_OBJS)
-#	$(CC) $(CFLAGS) -o $(TEST_EXEC) $(TEST_OBJS) -L. -lft
-#	./$(TEST_EXEC)
-
-# Run tests for mandatory part only
-# test_mandatory: re test
-
-# Run tests with bonus part included
-# test_bonus: fclean bonus test
 
 .PHONY: all clean fclean re bonus
