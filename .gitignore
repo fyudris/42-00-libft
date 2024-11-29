@@ -7,7 +7,6 @@ test
 *.c.swp
 libft.a
 libftTester-master/
-subject/
 
 # Prerequisites
 *.d
