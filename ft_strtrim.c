@@ -58,5 +58,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (is_to_trim(set, s1[j]))
 		j--;
-	return (create_trimstr(s1, i, j - (i - 1))); 
+	return (create_trimstr(s1, i, j - (i - 1)));
 }

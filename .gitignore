@@ -6,7 +6,8 @@ main
 test
 *.c.swp
 libft.a
-libftTester-master/
+.DS_STORE
+tests/build
 
 # Prerequisites
 *.d

@@ -1,17 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   test_libft.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 18:29:39 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/14 17:51:44 by fyudris          ###   ########.fr       */
+/*   Created: 2024/11/08 17:46:56 by fyudris           #+#    #+#             */
+/*   Updated: 2024/12/03 23:34:30 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
-{
-	return (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		|| (c >= '0' && c <= '9'));
-}
+#ifndef TESTLIBFT_H
+# define TESTLIBFT_H
+
+# include <unistd.h>
+# include <stdlib.h>
+# include <ctype.h>
+# include <stdio.h>
+# include <string.h>
+
+# include "../libft.h"
+
+void test_result(const char *test_name, int result, int expected);
+void test_string_result(const char *test_name, const char *result, const char *expected);
+
+#endif
