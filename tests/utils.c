@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_utils.c                                       :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
+/*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 23:22:56 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/03 23:58:13 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 01:38:08 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,16 @@
 #define RED         "\033[31m"
 #define YELLOW      "\033[33m"
 
-
-
 // Test result function for integer comparisons
 void test_result(const char *test_name, int result, int expected)
 {
     if (result == expected)
     {
-        printf(GREEN "[PASS] " RESET "%s\n", test_name); // Green for pass
-    }
+        printf(GREEN "[PASS] " RESET "%s\n", test_name);
+	}
     else
     {
-        printf(RED "[FAIL] " RESET "%s\n", test_name);   // Red for fail
+        printf(RED "[FAIL] " RESET "%s\n", test_name);
         printf(YELLOW "  -> Expected: %d, Got: %d\n" RESET, expected, result);
     }
 }
@@ -40,11 +38,11 @@ void test_string_result(const char *test_name, const char *result, const char *e
 {
     if (strcmp(result, expected) == 0)
     {
-        printf(GREEN "[PASS] " RESET "%s\n", test_name); // Green for pass
-    }
+        printf(GREEN "[PASS] " RESET "%s\n", test_name);
+	}
     else
     {
-        printf(RED "[FAIL] " RESET "%s\n", test_name);   // Red for fail
+        printf(RED "[FAIL] " RESET "%s\n", test_name);
         printf(YELLOW "  -> Expected: \"%s\"\n" RESET, expected);
         printf(YELLOW "  -> Got:      \"%s\"\n" RESET, result);
     }

@@ -6,12 +6,27 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:29:39 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/14 17:51:44 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 01:26:26 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/*
+NAME
+	isalnum -- alphanumeric character test
+
+DECRIPTION
+    The ft_isalnum() function tests for any character for which ft_isalpha() 
+	or ft_isdigit() is true.
+	The value of the argument must be resprensentable as an unsigned 
+	char or the value of EOF.
+
+RETURN VALUES
+    The ft_isalnum() function return zero if the character tests false 
+	and returns non-zero if the character tests true.
+*/
 int	ft_isalnum(int c)
 {
-	return (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		|| (c >= '0' && c <= '9'));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

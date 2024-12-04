@@ -14,11 +14,11 @@ all: $(BUILD_DIR) $(TEST_BINS)
 
 # Create the build directory
 $(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
+	@mkdir -p $(BUILD_DIR)
 
 # Rule to compile each test file into its own binary
 $(BUILD_DIR)/%: %.c $(TEST_UTILS) $(LIB_SRCS)
-	$(CC) $(CFLAGS) -DMAIN -o $@ $< $(TEST_UTILS) $(LIB_SRCS)
+	@$(CC) $(CFLAGS) -DMAIN -o $@ $< $(TEST_UTILS) $(LIB_SRCS)
 
 # Rule to run all tests
 run: all
@@ -35,10 +35,10 @@ run: all
 # Rule to run a specific test
 run_%: $(BUILD_DIR)/%
 	@echo "Running $*..."
-	./$(BUILD_DIR)/$* || exit 1
+	@./$(BUILD_DIR)/$* || exit 1
 # Clean build artifacts
 clean:
-	rm -rf $(BUILD_DIR)
+	@rm -rf $(BUILD_DIR)
 
 # Phony targets
 .PHONY: all run clean

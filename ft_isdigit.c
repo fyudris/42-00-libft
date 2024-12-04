@@ -6,10 +6,23 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:24:20 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/14 17:52:11 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 01:17:23 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+NAME
+	isdigit() -- alphabetic character test
+
+DECRIPTION
+    The ft_isdigit() function tests for a decimal digit character.
+	The value of the argument must be resprensentable as an unsigned 
+	char or the value of EOF.
+
+RETURN VALUES
+    The ft_isdigit() function return zero if the character tests false 
+	and returns non-zero if the character tests true.
+*/
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
