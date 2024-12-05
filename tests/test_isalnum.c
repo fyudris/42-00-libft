@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_isalnum.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
+/*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 01:23:36 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 01:28:22 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/05 15:02:26 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void test_isalnum()
     for (int i = 0; i < num_tests; i++)
     {
         int test_char = test_values[i];
-        int expected = isalnum(test_char);    // Reference result
+        int expected = isalnum(test_char) ? 1 : 0;    // Reference result
         int result = ft_isalnum(test_char);   // Test function result
 
         char test_name[50];
