@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 01:12:43 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 01:43:01 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/05 14:58:37 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void test_isdigit()
     for (int i = 0; i < num_tests; i++)
     {
         int test_char = test_values[i];
-        int expected = isdigit(test_char);
+        int expected = isdigit(test_char) ? 1 : 0; // Normalize to 1 or 0
         int result = ft_isdigit(test_char);
 
         char test_name[50];
@@ -43,6 +43,7 @@ void test_isdigit()
     }
     printf("\n=== End of ft_isdigit tests ===\n\n");
 }
+
 
 #ifdef MAIN
 int main()
