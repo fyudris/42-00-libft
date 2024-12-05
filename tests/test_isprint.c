@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 01:39:18 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 01:42:56 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/05 14:53:52 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void test_isprint()
     for (int i = 0; i < num_tests; i++)
     {
         int test_char = test_values[i];
-        int expected = isprint(test_char);
+        int expected = isprint(test_char) ? 1 : 0; // Normalize to 1 or 0
         int result = ft_isprint(test_char);
 
         char test_name[50];
@@ -40,6 +40,7 @@ void test_isprint()
 
     printf("\n=== End of ft_isprint tests ===\n\n");
 }
+
 
 #ifdef MAIN
 int main()
