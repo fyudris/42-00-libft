@@ -6,12 +6,26 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:44:29 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/27 17:12:29 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 11:03:16 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+NAME
+    memset -- fill a byte string with a byte value
+DESCRIPTION
+    The ft_memset function fills the first n bytes of the memory area pointed
+	to by s with the constant byte value c (converted to unsigned char).
+	It is commonly used to initialize or reset memory blocks efficient
+PARAMETER
+	s: Pointer to the memory area to be filled.
+	c: Byte value to set, converted to unsigned char.
+	n: Number of bytes to set.
+RETURN VALUES
+    Returns the original pointer s to the memory area.
+	*/
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
@@ -24,27 +38,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-#include <stdio.h>
-#include "libft.h"
-
-int main(void)
-{
-    // Test case from the checker
-    void *result = ft_memset(((void*)0), 'a', 12);
-    printf("Result for ft_memset(NULL, 'a', 12): %p\n", result); 
-	// Should print (nil) or NULL
-
-    // Additional cases to verify behavior
-    char buffer[20] = {0};
-    ft_memset(buffer, 'b', 5);
-    printf("Buffer after memset: %.5s\n", buffer); 
-	// Should print "bbbbb"
-
-    result = ft_memset(NULL, 'a', 0);
-    printf("Result for ft_memset(NULL, 'a', 0): %p\n", result); 
-	// Should print (nil) or NULL
-
-    return 0;
-}
-*/

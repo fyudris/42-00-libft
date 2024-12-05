@@ -6,12 +6,22 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:36:22 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/12 19:16:00 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 10:40:41 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+NAME
+	strlen -- find length of string
+
+DECRIPTION
+    The ft_strlen() function computes the length of the string s.
+
+RETURN VALUES
+    The ft_strlen() function returns the number of characters that precede the terminating NUL character.
+*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;

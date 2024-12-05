@@ -3,14 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
+/*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 17:12:28 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/27 18:19:15 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/04 14:22:50 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+NAME
+    memcpy -- copy memory area
+DESCRIPTION
+    The ft_memcpy function copies n bytes from the memory area pointed
+    to by src to the memory area pointed to by dest. The memory areas
+    should not overlap, as this may result in undefined behavior.
+PARAMETERS
+    dest: Pointer to the destination memory area.
+    src: Pointer to the source memory area.
+    n: Number of bytes to copy.
+RETURN VALUES
+    Returns a pointer to the destination memory area (dest).
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
