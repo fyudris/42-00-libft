@@ -3,14 +3,42 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fyudris <fyudris@student.42berlin.de>      +#+  +:+       +#+        */
+/*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 21:47:59 by fyudris           #+#    #+#             */
-/*   Updated: 2024/11/27 22:21:28 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 14:45:23 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+NAME
+    ft_itoa -- convert an integer to a string
+
+DESCRIPTION
+    The ft_itoa function converts an integer `n` to a null-terminated
+    string representation. The function dynamically allocates memory
+    for the resulting string, which must be freed by the caller.
+
+PARAMETERS
+    n: The integer to convert.
+
+RETURN VALUES
+    - A pointer to the newly allocated string containing the string
+      representation of `n`.
+    - NULL if memory allocation fails.
+
+NOTES
+    - The function handles negative numbers and returns a string
+      containing the '-' character if `n` is negative.
+    - The caller is responsible for freeing the allocated memory.
+
+BUGS
+    The function assumes valid integer input. Passing invalid data
+    or extreme edge cases like INT_MIN without `long` conversion
+    could result in undefined behavior.
+*/
 
 static int	get_num_length(int n);
 static char	*allocate_string(int len);
