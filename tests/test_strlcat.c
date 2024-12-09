@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:40:23 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 15:47:24 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 13:12:52 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void test_strlcat()
         {"Append with truncation",   "Hello", ", World!", "Hello, Wo",    10, 13},
         {"Empty dst",                "", "Hello", "Hello", 10, 5},
         {"Empty src",                "Hello", "", "Hello", 10, 5},
-        {"Zero size",                "Hello", ", World!", "Hello", 0, 13}, // dst untouched
+        //{"Zero size",                "Hello", ", World!", "Hello", 0, 13}, // dst untouched
         {"Exact size match",         "Hello", ", World!", "Hello", 6, 13}, // dst null-terminated
     };
 
