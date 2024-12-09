@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 13:11:16 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:11:33 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 19:55:23 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void test_calloc()
         {"Allocate 0 bytes", 0, 1, 1},
         {"Allocate 0 members", 1, 0, 1},
         {"Allocate large array", 100, 100, 1},
-        {"Overflow test", SIZE_MAX, 2, 0},
+        {"Overflow test", __SIZE_MAX__, 2, 0},
         {"Allocate single element", 1, sizeof(int), 1},
     };
 

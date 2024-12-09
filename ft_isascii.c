@@ -6,13 +6,13 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:32:24 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 01:32:55 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:09:40 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 NAME
-	isascii -- test for ASCII character
+	ft_isascii -- test for ASCII character
 
 DECRIPTION
     The ft_isascii() function tests for an ASCII character, which is any character

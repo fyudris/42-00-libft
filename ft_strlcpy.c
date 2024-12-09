@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 18:50:44 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 15:25:02 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 22:33:38 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 /*
 NAME
-    strlcpy -- copy a string to a sized buffer
+    ft_strlcpy -- copy a string to a sized buffer
+
 DESCRIPTION
     The ft_strlcpy function copies up to size - 1 characters from the
     null-terminated string src to the buffer dst, null-terminating the
     result. The function is designed to be safer and more consistent
     than strncpy.
+
 PARAMETERS
     dst: Pointer to the destination buffer.
     src: Pointer to the null-terminated source string.
     size: Size of the destination buffer.
+    
 RETURN VALUES
     Returns the total length of the string src. If the return value is
     greater than or equal to size, truncation occurred.

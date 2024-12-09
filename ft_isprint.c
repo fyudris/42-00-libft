@@ -6,13 +6,13 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:34:56 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 01:43:00 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:09:47 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 NAME
-	isprint() -- printing character test (space character inclusive)
+	ft_isprint() -- printing character test (space character inclusive)
 
 DECRIPTION
     The ft_isprint() function checks whether the character c falls within the

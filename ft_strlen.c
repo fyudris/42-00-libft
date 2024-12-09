@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:36:22 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 10:40:41 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:07:30 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 NAME
-	strlen -- find length of string
+	ft_strlen -- find length of string
 
 DECRIPTION
     The ft_strlen() function computes the length of the string s.

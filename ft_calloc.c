@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 18:38:46 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:10:29 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:09:19 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /*
 NAME
-    calloc -- allocate and zero-initialize memory
+    ft_calloc -- allocate and zero-initialize memory
+    
 DESCRIPTION
     The ft_calloc function allocates memory for an array of nmemb elements,
     each of size bytes. The allocated memory is initialized to zero.
@@ -39,7 +40,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 	unsigned char	*temp;
 
-	if (nmemb != 0 && size > SIZE_MAX / nmemb)
+	if (nmemb != 0 && size > __SIZE_MAX__ / nmemb)
 		return (NULL);
 	i = 0;
 	temp = malloc(nmemb * size);

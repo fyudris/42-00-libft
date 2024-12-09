@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 17:19:31 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/04 15:21:57 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:06:13 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /*
 NAME
-    memmove -- copy memory area handling overlaps
+    ft_memmove -- copy memory area handling overlaps
+
 DESCRIPTION
     The ft_memmove function copies n bytes from the memory area pointed
     to by src to the memory area pointed to by dest. The memory areas
@@ -22,10 +23,12 @@ DESCRIPTION
     corruption.
 	It is similar to ft_memcpy, but it can handle overlapping memory regions
 	safely, making it more versatile.
+
 PARAMETERS
     dest: Pointer to the destination memory area.
     src: Pointer to the source memory area.
     n: Number of bytes to copy.
+
 RETURN VALUES
     Returns a pointer to the destination memory area (dest).
 */

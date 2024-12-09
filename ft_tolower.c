@@ -6,13 +6,14 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:13:41 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:17:42 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 22:33:51 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 NAME
     ft_tolower -- convert an uppercase letter to lowercase
+    
 DESCRIPTION
     The ft_tolower function converts an uppercase letter to its corresponding
     lowercase letter, if it exists. If the input character is not an uppercase

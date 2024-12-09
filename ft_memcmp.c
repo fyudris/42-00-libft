@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 18:07:31 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:48:52 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 23:05:51 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 NAME
-    memcmp -- compare memory blocks byte by byte
+    ft_memcmp -- compare memory blocks byte by byte
 
 DESCRIPTION
     The ft_memcmp function compares the first `n` bytes of the memory areas

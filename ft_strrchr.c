@@ -6,7 +6,7 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:52:31 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:23:37 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 22:33:59 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 NAME
-    strrchr -- locate the last occurrence of a character in a string
+    ft_strrchr -- locate the last occurrence of a character in a string
 
 DESCRIPTION
     The ft_strrchr function locates the last occurrence of the character `c`

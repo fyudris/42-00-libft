@@ -6,13 +6,14 @@
 /*   By: fyudris <fyudris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 13:43:27 by fyudris           #+#    #+#             */
-/*   Updated: 2024/12/09 13:14:50 by fyudris          ###   ########.fr       */
+/*   Updated: 2024/12/09 22:33:46 by fyudris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 NAME
     ft_toupper -- convert a lowercase letter to uppercase
+    
 DESCRIPTION
     The ft_toupper function converts a lowercase letter to its corresponding
     uppercase letter, if it exists. If the input character is not a lowercase
