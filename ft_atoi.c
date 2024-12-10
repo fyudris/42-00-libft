@@ -38,9 +38,7 @@ BUGS
 */
 static int	ft_iswhitespace(char c)
 {
-	if (c == 9 || c == 10 || c == 11 || c == 12 || c == 13 || c == 32)
-		return (1);
-	return (0);
+	return (c >= 9 && =< 13 || c == 32)
 }
 
 int	ft_atoi(const char *nptr)
